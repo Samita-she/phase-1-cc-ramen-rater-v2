@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>Ramen Rater</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script defer type="module" src="./src/index.js"></script>
+  <script src="./src/index.js" type="module"></script>
 </head>
 
 <body>
@@ -13,11 +13,7 @@
     <h3>Ramen Rater</h3>
   </header>
 
-  
-  <div id="ramen-menu">
-  
-  </div>
-
+  <div id="ramen-menu"></div>
 
   <div id="ramen-detail">
     <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
@@ -34,7 +30,7 @@
     Insert comment here
   </p>
 
-
+  <!-- Form to Add New Ramen -->
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
     <label for="new-name">Name: </label>
@@ -46,11 +42,20 @@
     <label for="new-rating">Rating: </label>
     <input type="number" name="rating" id="new-rating" />
     <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
+    <textarea name="comment" id="new-comment"></textarea>
     <input type="submit" id='submit-button' value="Create" />
+  </form>
+
+  <!-- Form to Edit Featured Ramen -->
+  <form id="edit-ramen">
+    <h4>Update the Featured Ramen</h4>
+    <label for="new-rating">Rating: </label>
+    <input type="number" id="new-rating" />
+    <label for="new-comment">Comment: </label>
+    <textarea id="new-comment"></textarea>
+    <button type="submit">Update</button>
   </form>
 
 </body>
 
 </html>
-
